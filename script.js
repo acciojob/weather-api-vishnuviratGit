@@ -15,9 +15,7 @@ const fetchData= async ()=>{
        catch(error){
           console.log("error is: ",error);
        }
-       divData.innerHTML=`
-       Current weather in London: ${weatherData}
-    `
+       divData.innerHTML=`Current weather in London: ${weatherData}`
 }
 btn.addEventListener("click", ()=>{
       fetchData();
